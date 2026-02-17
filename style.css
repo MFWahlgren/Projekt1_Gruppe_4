@@ -1,0 +1,45 @@
+h1{
+  text-align:center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu {
+    text-align: right;
+}
+
+.menu button {
+    background-color: green;
+    color: yellow;
+    border-radius: 10px;
+}
+
+.top-section {
+     background-color: #f4c430;
+     padding: 15px;
+}
+
+.button-section {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("mad billede.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 400px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: white;
+
+    text-align: center;
+}
+
+.button-section a {
+    color: yellow;
+    text-decoration: none;
+}
