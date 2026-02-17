@@ -80,6 +80,32 @@
             display: flex;
             gap: 10px;
         }
+
+        .btn{
+            height: 40px;
+            flex:1;
+            border-radius: 8px;
+
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #btn-cancel{
+            background: transparent;
+            border: 1px solid #fe3b31;
+            color: #fe3b31;
+        }
+
+        #btn-submit{
+            background: #4ed964;
+            border:none;
+            color:white;
+        }
+
+        #btn-cancel:hover{
+            background: #fe3b31;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -115,8 +141,8 @@
     </div>
 
     <div class="buttons">
-        <button type="button" class="btn-cancel">Annuller</button>
-        <button type="submit" class="btn-submit">Registrer</button>
+        <button type="button" class="btn" id="btn-cancel">Annuller</button>
+        <button type="submit" class="btn" id="btn-submit">Registrer</button>
     </div>
 </form>
 
