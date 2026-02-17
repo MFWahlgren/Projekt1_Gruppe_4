@@ -5,21 +5,38 @@
     <title>Registrer</title>
 
     <style>
-
         * {
-            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100vh;
+        }
+
+        .left {
+            background-color: #1e7568;
+            color: white;
             display: flex;
             justify-content: center;
-            padding: 60px 0;
+            align-items: center;
+            text-align: center;
+        }
+
+        .right {
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px;
+            gap: 10px;
         }
 
         .register-form {
-            width: 640px;
+            font-family: Helvetica, sans-serif;
             padding: 40px;
             border-radius: 34px;
             box-shadow: 0 11px 34px rgba(0, 0, 0, .65);
@@ -27,12 +44,6 @@
             display: flex;
             flex-direction: column;
             gap: 22px;
-        }
-
-        .form-title{
-            text-align: center;
-            font-size: 32px;
-            font-weight: 600;
         }
 
         .name-wrapper {
@@ -55,7 +66,6 @@
             border-radius: 12px;
 
             font-size: 17px;
-
         }
 
         .form-input label {
@@ -81,70 +91,80 @@
             gap: 10px;
         }
 
-        .btn{
+        .btn {
             height: 40px;
-            flex:1;
+            flex: 1;
             border-radius: 8px;
 
             cursor: pointer;
             font-size: 14px;
         }
 
-        #btn-cancel{
+        #btn-cancel {
             background: transparent;
             border: 1px solid #fe3b31;
             color: #fe3b31;
         }
 
-        #btn-submit{
+        #btn-submit {
             background: #4ed964;
-            border:none;
-            color:white;
+            border: none;
+            color: white;
         }
 
-        #btn-cancel:hover{
+        #btn-cancel:hover {
             background: #fe3b31;
             color: white;
         }
+
     </style>
 </head>
 <body>
+<div class="container">
 
-<form class="register-form">
-    <h1 class="form-title">Registrer</h1>
+    <div class="left">
+        <h1>Registrer<br>SOMETHINGSOMETHING</h1>
 
-    <div class="name-wrapper">
-        <div class="form-input">
-            <input type="text" placeholder=" ">
-            <label>Fornavn</label>
-        </div>
-
-        <div class="form-input">
-            <input type="text" placeholder=" ">
-            <label>Efternavn</label>
-        </div>
     </div>
 
+    <div class="right">
+        <form class="register-form">
+            <h1 class="form-title">Registrer</h1>
 
-    <div class="email-wrapper">
-        <div class="form-input">
-            <input type="email" placeholder=" ">
-            <label>E-mailadresse</label>
-        </div>
-    </div>
+            <div class="name-wrapper">
+                <div class="form-input">
+                    <input type="text" placeholder=" ">
+                    <label>Fornavn</label>
+                </div>
 
-    <div class="password-wrapper">
-        <div class="form-input">
-            <input type="password" placeholder=" ">
-            <label>Adgangskode</label>
-        </div>
-    </div>
+                <div class="form-input">
+                    <input type="text" placeholder=" ">
+                    <label>Efternavn</label>
+                </div>
+            </div>
 
-    <div class="buttons">
-        <button type="button" class="btn" id="btn-cancel">Annuller</button>
-        <button type="submit" class="btn" id="btn-submit">Registrer</button>
+
+            <div class="email-wrapper">
+                <div class="form-input">
+                    <input type="email" placeholder=" ">
+                    <label>E-mailadresse</label>
+                </div>
+            </div>
+
+            <div class="password-wrapper">
+                <div class="form-input">
+                    <input type="password" placeholder=" ">
+                    <label>Adgangskode</label>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btn" id="btn-cancel">Annuller</button>
+                <button type="submit" class="btn" id="btn-submit">Registrer</button>
+            </div>
+        </form>
     </div>
-</form>
+</div>
 
 </body>
 </html>
