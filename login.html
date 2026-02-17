@@ -15,14 +15,28 @@
     </div>
 
     <div class="right">
-        <h2>Log ind</h2>
-        <lable>E-mailadresse</lable>
-        <input type="email">
+        <form class="login-form">
+            <h1 class="form-title">Login</h1>
 
-        <lable>Kodeord</lable>
-        <input type="password">
+            <div class="email-wrapper">
+                <div class="form-input">
+                    <input type="email" placeholder=" ">
+                    <label>E-mailadresse</label>
+                </div>
+            </div>
 
-        <button>Log Ind</button>
+            <div class="password-wrapper">
+                <div class="form-input">
+                    <input type="password" placeholder=" ">
+                    <label>Adgangskode</label>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btn" id="btn-cancel">Annuller</button>
+                <button type="submit" class="btn" id="btn-submit">Login</button>
+            </div>
+        </form>
     </div>
 </div>
 </body>
