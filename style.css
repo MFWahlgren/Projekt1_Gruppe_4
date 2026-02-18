@@ -8,9 +8,18 @@ h1{
 }
 
 .menu button {
+    background-color: transparent;
+    color: green;
+    border-radius: 8px;
+    border: 2px solid green;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu button:hover {
     background-color: green;
-    color: yellow;
-    border-radius: 10px;
+    color: #f4c430;
+    box-shadow: 0 11px 34px rgba(0,0,0 .65);
 }
 
 .top-section {
@@ -42,4 +51,20 @@ h1{
 .button-section a {
     color: yellow;
     text-decoration: none;
+}
+
+.bottom-text a {
+    display: inline-block;        /* gør dem større */
+    background-color: #28a745;    /* grøn baggrund */
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 8px 0 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-text a:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);       /* lille hover effekt */
 }
